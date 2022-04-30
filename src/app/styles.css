@@ -1,0 +1,31 @@
+* {
+  background-color: #1c1e21;
+  color: #f5f6f7;
+}
+
+#input-file {
+  display: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 8px;
+}
+
+input, button {
+  border: 1px solid #c5c5c6;
+}
+
+#file-upload-wrapper {
+  margin-bottom: 16px;
+}
+
+#file-view-wrapper {
+  display: none;
+}
+
+#file-view-search-wrapper {
+  position: sticky;
+  top: 0;
+  padding: 8px;
+}

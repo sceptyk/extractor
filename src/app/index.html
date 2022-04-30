@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>extractor</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+  </head>
+  <body>
+    <div id="file-upload-wrapper">
+      <input id="input-file" type="file" />
+      <button id="button-load">Load file</button>
+      <span id="file-upload-loader"></span>
+    </div>
+    <div id="file-view-wrapper">
+      <div id="file-view-search-wrapper">
+        <input id="input-search" type="text" />
+        <button id="button-search">Search</button>
+        <button id="button-clear">Clear</button>
+        <button id="button-prev">Prev</button>
+        <button id="button-next">Next</button>
+        <span id="search-count"></span>
+      </div>
+      <div id="file-content-wrapper">
+        <div id="file-content"></div>
+      </div>
+    </div>
+    <script src="../page/page.js"></script>
+  </body>
+</html>
